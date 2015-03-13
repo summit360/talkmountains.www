@@ -1,0 +1,77 @@
+
+.navbar-inverse{
+    background-color: $navbar-background;
+}
+.navbar{
+    font-family: $headings-font-family;
+    border: none !important;
+    border-radius: 0;
+    margin-bottom: 0px;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
+    background-color: $navbar-primary-highlight !important;
+    color:$navbar-primary-color;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+    background-color: transparent;
+    color: $navbar-primary-color;
+}
+
+.navbar .dropdown-menu {
+    padding: 0;
+    margin: 0;
+    min-width: 190px;
+    background-color: #222;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-top: 2px solid $navbar-primary-highlight !important;
+}
+.navbar .dropdown-menu li a{
+    color:$navbar-primary-color;
+    padding: 9px 20px;
+    border-bottom: 1px solid #333;
+    font-weight: 400;
+    font-size: 14px;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+.navbar .dropdown-menu li:last-child a{
+    border-bottom: none;
+}
+.navbar .dropdown-menu li a:hover{
+    background: $navbar-primary-highlight;
+    color:$navbar-primary-color;
+}
+@media (min-width: 768px){
+    .navbar-nav > li > a {
+        font-size: 13px;
+        font-weight: 700;
+        padding: 17px 11px;
+        text-transform: uppercase;
+        line-height: 44px;
+        vertical-align: middle;
+    }
+.navbar-brand{
+    font-family: $headings-font-family;
+    color:$navbar-primary-color !important;
+    float: left ;
+    padding: 22px 15px;
+    font-weight: 400;
+    font-size: 2.0em;
+    height: 78px;
+  }
+  .navbar-brand strong {
+
+  }
+  .navbar-brand img{
+    margin-top: 7px;
+  }
+}
