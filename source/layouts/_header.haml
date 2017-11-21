@@ -15,22 +15,10 @@
         %ul.nav.navbar-nav.navbar-right
           %li{ nav_active('index.html')}
             %a{:href => "/"} Home
-          -#
-          -# %li.dropdown{ nav_active('news.html')}
-          -#   %a.dropdown-toggle.js-hover{ "data-toggle" => "dropdown", :href=> "/" }
-          -#     News
-          -#     %span.caret
-          -#   %ul.dropdown-menu
-          -#     %li
-          -#       %a{ href: '/news.html' } News
-          -#     %li
-          -#       %a{ href: '/' } Home
-          -#     %li
-          -#       %a{ href: '/' } Home
-          -#     %li
-          -#       %a{ href: '/' } Home
-          %li{ nav_active('community.html')}
-            %a{:href => "/community.html"} Community
-
-      / /.nav-collapse
-    / /.container
+          
+          %li{ nav_active('community')}
+            %a{:href => "/community"} Community
+          %li{ nav_active('social/index.html')}
+            %a{:href => "/social"} Social
+          %li{ nav_active('directory/index.html')}
+            %a{:href => "/directory"} Directory

@@ -5,74 +5,75 @@
         .footer-column
           %h3 About us
           %p.margin-btm20
-            Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scriptaset patrioque scribentur, at pro fugit erts verterem molestiae, sed et vivendo ali Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur.
-      .col-md-3.margin-btm-20
-        .footer-column
-          %h3 Latest post
-          %ul.list-unstyled.post-list
-            %li
-              %a.hover-color{:href => "#"} Blog slide post
-            %li
-              %a.hover-color{:href => "#"} Lorem ipsum dollor
-            %li
-              %a.hover-color{:href => "#"} Blog image post
-            %li
-              %a.hover-color{:href => "#"} Blog Video post
-            %li
-              %a.hover-color{:href => "#"} Lorem ipsum dollor
+            A site for people who love the mountains and being in the great outdoors.
+            %br
+            This sites vision began in 2000 as another site. It's now transformed and relaunched
+            %i.fa.fa-rocket .
+            %br
+            Independently owned, this site is run by
+            %a{:href=>"https://summit360.co.uk", :target=>"_new"} Summit 360
+      -# .col-md-3.margin-btm-20
+      -#   .footer-column
+      -#     -# %h3 Latest
+      -#     %ul.list-unstyled.post-list
+            -# %li
+            -#   %a.hover-color{:href => "#"} Blog slide post
+            -# %li
+            -#   %a.hover-color{:href => "#"} Lorem ipsum dollor
+            -# %li
+            -#   %a.hover-color{:href => "#"} Blog image post
+            -# %li
+            -#   %a.hover-color{:href => "#"} Blog Video post
+            -# %li
+            -#   %a.hover-color{:href => "#"} Lorem ipsum dollor
         / footer columns end
-      .col-md-3.margin-btm-20
+      .col-md-6.text-left.margin-btm-20
         .footer-column
-          %h3 Latest work
-          %ul.list-unstyled.work-list
-            %li
-              %a{:href => "#"}
-                -# %img.img-responsive{:alt => "", "data-original-title" => "Work Title", "data-placement" => "top", "data-toggle" => "tooltip", :src => "img/img-1.jpg", :title => ""}/
-            %li
-              %a{:href => "#"}
-                -# %img.img-responsive{:alt => "", "data-original-title" => "Work Title", "data-placement" => "top", "data-toggle" => "tooltip", :src => "img/img-2.jpg", :title => ""}/
-            %li
-              %a{:href => "#"}
-                -# %img.img-responsive{:alt => "", "data-original-title" => "Work Title", "data-placement" => "top", "data-toggle" => "tooltip", :src => "img/img-3.jpg", :title => ""}/
-            %li
-              %a{:href => "#"}
-                -# %img.img-responsive{:alt => "", "data-original-title" => "Work Title", "data-placement" => "top", "data-toggle" => "tooltip", :src => "img/img-4.jpg", :title => ""}/
-            %li
-              %a{:href => "#"}
-                -# %img.img-responsive{:alt => "", "data-original-title" => "Work Title", "data-placement" => "top", "data-toggle" => "tooltip", :src => "img/img-5.jpg", :title => ""}/
-            %li
-              %a{:href => "#"}
-                -# %img.img-responsive{:alt => "", "data-original-title" => "Work Title", "data-placement" => "top", "data-toggle" => "tooltip", :src => "img/img-6.jpg", :title => ""}/
-            %li
-              %a{:href => "#"}
-                -# %img.img-responsive{:alt => "", "data-original-title" => "Work Title", "data-placement" => "top", "data-toggle" => "tooltip", :src => "img/img-2.jpg", :title => ""}/
-            %li
-              %a{:href => "#"}
-                -# %img.img-responsive{:alt => "", "data-original-title" => "Work Title", "data-placement" => "top", "data-toggle" => "tooltip", :src => "img/img-1.jpg", :title => ""}/
-            %li
-              %a{:href => "#"}
-                -# %img.img-responsive{:alt => "", "data-original-title" => "Work Title", "data-placement" => "top", "data-toggle" => "tooltip", :src => "img/img-3.jpg", :title => ""}/
+          %h3 Keep up to date
+          %p Subscribe to our mailing list for updates, we don't share your email with anyone else.
+          / Begin MailChimp Signup Form
+
+
+          %form.form.validate#mc-embedded-subscribe-form{ :action => "//briskoda.us8.list-manage.com/subscribe/post?u=b1806bf81df30f77a217bd1fa&id=7922571141",
+            :method => "post",
+            :name => "mc-embedded-subscribe-form",
+          :target => "_blank"}
+            .form-group
+              %label.sr-only{:for => "mce-EMAIL"}Email address
+              %input.form-control#mce-EMAIL{:name => "EMAIL", :placeholder => "your email address", :required => "true", :type => "email", :value => ""}/
+              / real people should not fill this in and expect good things - do not remove this or risk form bot signups
+            %div{:style => "position: absolute; left: -5000px;"}
+              %input{:name => "b_b1806bf81df30f77a217bd1fa_7922571141", :tabindex => "-1", :type => "text", :value => ""}/
+
+            %button.btn.btn-primary#mc-embedded-subscribe{:name => "subscribe", :type => "submit", :value => "Subscribe"} Subscribe
+          %br
+          %p Remember, we care for your privacy like our own.
+          / End mc_embed_signup
         / footer columns end
       .col-md-3.margin-btm-20
         .footer-column
           %h3 Get in touch
           %ul.list-unstyled.contact-list.margin-btm-20
             %li
-              %i.fa.fa-home
+              %i.fa.fa-envelope
               %strong Post:
-              Co-Work Union St., 18-20 Union St, Sheffield, UK
+              Summit360,
+              %br
+              Co-Work Union St., 18-20 Union St,
+              %br
+              Sheffield, UK
             %li
               %i.fa.fa-phone
               %strong Phone:
               +44 114 360 2 180
             %li
-              %i.fa.fa-envelope
+              %i.fa.fa-keyboard-o
               %strong Email:
-              support@talkmountains.net
+              %a{:mailto=>"support@talkmountains.net"} support@talkmountains.net
             %li
               %i.fa.fa-globe
               %strong Website:
-              http://www.talkmountains.net
+              %a{:href=>"http://www.talkmountains.net"} http://www.talkmountains.net
           %ul.list-unstyled.list-inline.social
             %li
               %a{:href => "#"}

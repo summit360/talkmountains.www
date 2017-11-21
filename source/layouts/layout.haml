@@ -10,7 +10,13 @@
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
 
     %meta{:content => "width=device-width", :name => "viewport"}
-
+    %link{ rel: "apple-touch-icon", sizes: "152x152", href: "apple-touch-icon-152x152-precomposed.png" }
+    %link{ rel: "apple-touch-icon", sizes: "144x144", href: "apple-touch-icon-144x144-precomposed.png" }
+    %link{ rel: "apple-touch-icon", sizes: "114x114", href: "apple-touch-icon-114x114-precomposed.png" }
+    %link{ rel: "apple-touch-icon", sizes: "72x72", href: "apple-touch-icon-72x72-precomposed.png" }
+    %link{ rel: "apple-touch-icon", href: "apple-touch-icon-precomposed.png" }
+    %link{ rel: "shortcut icon", href: "favicon.png" }
+    %link{ rel: "icon", type: "image/ico", href: "favicon.ico" }
     -#Favicon Options:
     -#Update favicon_base.png in /source and middleman-favicon-maker will generate all the versions you need on 'middleman build'
     -#OR, place favicon.ico and apple-touch-icon.png in /source and deactivate :favicon_maker in config.rb
@@ -19,7 +25,7 @@
     / Included CSS Files
     = stylesheet_link_tag "style"
     = stylesheet_link_tag "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-
+    = stylesheet_link_tag "//fonts.googleapis.com/css?family=Raleway:700,400|Merriweather"
 
   %body.body-default
 
@@ -33,7 +39,6 @@
 
     -# Google Analytics
     :javascript
-
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -41,3 +46,8 @@
 
       ga('create', 'UA-29678485-1', 'auto');
       ga('send', 'pageview');
+    :javascript
+      document.addEventListener('DOMContentLoaded', function(event) {
+        cookieChoices.showCookieConsentBar('We use cookies on this website.',
+          'close message', 'learn more', 'http://talkmountains.net');
+      });

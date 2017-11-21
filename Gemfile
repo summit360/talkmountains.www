@@ -21,3 +21,5 @@ gem 'middleman-deploy', '~> 1.0'
 gem "middleman-favicon-maker", :git => "git://github.com/follmann/middleman-favicon-maker.git"
 
 gem "bootstrap-sass", require: false
+
+gem 'middleman-search_engine_sitemap'
